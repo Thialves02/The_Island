@@ -24,7 +24,7 @@ Linguagem utilizada no projeto:
 
 ## :white_check_mark: Pré requisitos
 
-Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com),o [Pip](https://pypi.org/project/pip/) e o [Pygame] instalados em sua máquina.
+Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com), o [Pip](https://pypi.org/project/pip/) e o Pygame instalados em sua máquina.
 
 ## :checkered_flag: Começando
 
