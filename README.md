@@ -10,15 +10,6 @@
   
 </p>
 
-<p align="center">
-  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-pré-requesitos">Pré requisitos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-começando">Começando</a> &#xa0; | &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/JulianePires" target="_blank">Autor</a>
-</p>
-
 <br>
 
 ## :dart: Sobre
@@ -41,10 +32,7 @@ Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.co
 # Clone este repositório
 $ git clone https://github.com/Thialves02/The_Island.git
 
-# Abra a pasta na sua IDE
-$ cd rickandmorty
+# Abra a pasta do projeto na sua IDE
 
 # Para iniciar o projeto
-Rode o main
-
-<a href="#top">Voltar para o topo</a>
+Rode o arquivo main
