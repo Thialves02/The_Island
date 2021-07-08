@@ -4,8 +4,6 @@
   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/Thialves02/The_island?color=56BEB8">
 
   <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/Thialves02/The_island?color=56BEB8">
-
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/Thialves02/The_island?color=56BEB8">
 </p>
 
 <br>
@@ -18,7 +16,7 @@ Projeto final do módulo 1 de lógica de programação da Blue Edech
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Pytho]
+- [Python]
 
 ## :white_check_mark: Pré requisitos ##
 
