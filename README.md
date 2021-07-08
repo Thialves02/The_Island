@@ -29,6 +29,9 @@ Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.co
 ## :checkered_flag: Começando
 
 ```bash
+#Abra o CMD e escreva
+pip install pygame
+
 # Clone este repositório
 $ git clone https://github.com/Thialves02/The_Island.git
 
