@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img align="center" width="300px" src="https://gartic.com.br/imgs/mural/_v/_vorreipace_/ilha.png" alt="Rickandmorty" />
+  <img align="center" width="300px" src="https://gartic.com.br/imgs/mural/_v/_vorreipace_/ilha.png" alt="The_Island" />
 
 &#xa0;
 </div>
@@ -44,7 +44,7 @@ Abra o CMD e digite "pip install pygame"
 $ git clone https://github.com/Thialves02/The_island
 
 #Iniciando o jogo
-Abra a pasta do jogo na sua IDE e roda o main
+Abra a pasta do jogo na sua IDE e rode o main
 ```
 
 
