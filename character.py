@@ -219,13 +219,14 @@ class Character:
             banners.win_banner()
             input("Pressione ENTER para continuar...")
             os.system("cls")
+            musicas.digitar()
             final = ("Após uma árdua luta contra macacos furiosos e contra a fome durante essa jornada você finalmente conseguiu juntar todos os itens necessários para construir uma pequena jangada para fugir.Desengonçadamente você progrediu rápido e na construção da sua jangada vc finalmente  termina com a angustia de morrer sozinho, orgulhoso de sua criação você para e admira um pouco sua incrivel criação e o coloca no mar. Você se despede da ilha relembrando todo os momentos de luta e medo que passou mas esboça um sorriso no rosto após perceber que tudo já passou e que agora você finalmente voltará para sua vida normal, e consiguirá levar sua filha ao altar") 
             #Se o personagem estiver com os 3 itens ele conseguirá fugir da ilha            
             for l in list(final):
                 print(l, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
                 sys.stdout.flush()
-                time.sleep(0.03)
+                time.sleep(0.04)
             
             print("")
             input('Aperte ENTER...')           

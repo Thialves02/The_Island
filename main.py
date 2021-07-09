@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
         musicas.musica_ini()
         banner.title_banner()
-
+        time.sleep(13)
         input("\nAperte ENTER para continuar...")
         os.system("cls")
         print("")
@@ -60,24 +60,26 @@ if __name__ == "__main__":
         os.system("cls")
 
         if lingua == 2:
+            musicas.digitar()
             frase = ("Após 6 meses viajando a negócios, você recebeu a noticia que poderia voltar para casa, e chegaria a tempo do casamento da sua filha... Mau sabia que essa viagem mudaria completamente sua vida...\nO avião que você estava sofreu um acidente durante uma tempestade e caiu em uma ilha aparentemente deserta, seu objetivo é sobreviver e escapar da ilha para chegar em tempo de levar sua filha ao altar.")
 
-            for i in list(frase):
-                print(i, end='')
+            #for i in list(frase):
+                #print(i, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
-                sys.stdout.flush()
-                time.sleep(0.05)
+                #sys.stdout.flush()
+                #time.sleep(0.065)
             print("")
             input("\nAperte ENTER para iniciar o jogo...")
 
         elif lingua == 1:
+            musicas.digitar()
             frase = ("After 6 months traveling on business, you received the news that you could return home, and arrive in time for your daughter's wedding... Bad did you know that this trip would completely change your life...\nThe plane you were on had an accident during a storm and crashed on a seemingly deserted island, your goal is to survive and escape the island to reach in time to take your daughter to the altar.")
 
             for i in list(frase):
                 print(i, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
                 sys.stdout.flush()
-                time.sleep(0.05)
+                time.sleep(0.065)
             print("")
             input("\nPress ENTER to start the game...")
         os.system("cls")

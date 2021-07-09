@@ -212,13 +212,14 @@ class Character_ing:
             banners.win_banner()
             input("Press ENTER to continue...")
             os.system("cls") 
+            musicas.digitar()
             final = ("After an arduous fight against angry monkeys and hunger during this journey you finally managed to gather all the necessary items to build a small raft to escape. You awkwardly progressed fast and in building your raft you finally end with the anguish of dying alone, proud of your creation you stop and admire your incredible creation and put it in the sea. You say goodbye to the island remembering all the moments of struggle and fear you went through but you have a smile on your face after realizing that everything has passed and that now you will finally return to your normal life") 
             #Se o personagem estiver com os 3 itens ele conseguirá fugir da ilha            
             for l in list(final):
                 print(l, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
                 sys.stdout.flush()
-                time.sleep(0.05)
+                time.sleep(0.04)
             input('Press ENTER...')           
             exit()
 
