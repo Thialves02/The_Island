@@ -65,10 +65,10 @@ class Character:
             else:
                 input("Mas sua mochila ja estava cheia de bananas então sua busca não adiantou de nada") #TExto informativo caso o personagem esteja com a mochila cheia de comida
             self.__fome -= 20 #Ao sair para buscar comida o personagem perde 20 de fome
-            if self.__fome<0: #Se a fome for menor que 0 o personagem morre de fome
-                        musicas.musica_gameover()
+            if self.__fome<0: #Se a fome for menor que 0 o personagem morre de fome                        
                         input("Mas... acabou morrendo de fome antes de conseguir comer")#Texto informativo sobre o que aconteceu  
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()    
                         input('Aperte o Enter para sair')
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
@@ -79,16 +79,16 @@ class Character:
             self.__fome -= 20 #Ao não conseguir achar comida o personagem também perde 20 de fome
             if self.__fome<0: #Se a fome for menor que 0 o personagem morrre de fome
                 if self.__banana>0:                    
-                        musicas.musica_gameover()
                         input("Você se preocupou muito em procurar mais comida e morreu de fome pois esqueceu de comer") #Texto informativo sobre o que aconteceu 
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()    
                         input('Aperte o Enter para sair')
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
-                else:
-                    musicas.musica_gameover()
+                else:                  
                     input("Você não tinha nenhuma comida e morreu de fome") #Texto informativo sobre o que aconteceu 
                     os.system("cls") #Limpa o terminal
+                    musicas.musica_gameover()
                     banners.end_banner()    
                     input('Aperte o Enter para sair')
                     exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
@@ -113,9 +113,9 @@ class Character:
                 print("")
                 print(f"Você sofreu {dano} de dano") #Texto que informa quanto de dano o personagem sofreu
                 if self.__vida<=0:
-                    musicas.musica_gameover()
                     input("VOCÊ SOFREU UM ATAQUE FATAL E MORREU") #Mensagem após o personagem tomar um dano critico e ficar sem vida
                     os.system("cls") #Limpa o terminal
+                    musicas.musica_gameover()
                     banners.end_banner()    
                     input('Aperte o Enter para sair')
                     exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
@@ -134,20 +134,20 @@ class Character:
                     else:
                         input("Mas sua luta pelo item foi em vão... Sua mochila já estava cheia e você não conseguiu carregar mais nada") #Texto informativo caso o personagem já esteja lotado de remédios
                     self.__fome -= 20 #Personagem perde 20 de fome 
-                    if self.__fome<=0:
-                        musicas.musica_gameover()                       
+                    if self.__fome<=0:                       
                         input("Mas... acabou morrendo de fome") #Mensagem informativa caso o personagem morra de fome
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()    
                         input('Aperte o Enter para sair')
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
             else:
                 input("Você fugiu e não pegou o item...\nSeja mais corajoso na próxima") #Mensagem caso o jogador opte por fugir do combate
                 self.__fome -= 20 #Personagem perde 20 de fome
-                if self.__fome<=0:
-                        musicas.musica_gameover()
+                if self.__fome<=0:                        
                         input("Mesmo fugindo a morte chegou para você, que acabou morrendo de fome") #Mensagem informativa caso o personagem morra de fom
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()    
                         input('Aperte o Enter para sair')
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
@@ -160,10 +160,10 @@ class Character:
                 self.__remedio+=1 #Personagem adquire mais um remédio caso o espaço da mochila destino para remédios não esteja cheio
             else:
                 input("Por mais sortudo que você seja ao achar o remédio você foi azarado de não ter espaço suficiente para guarda-lo") #Texto informativo caso o personagem já esteja cheio de remédios
-            if self.__fome<0:
-                musicas.musica_gameover()                
+            if self.__fome<0:                            
                 input("Mesmo com toda sua sorte você morreu de fome pois esqueceu de comer") #Mensagem informativa caso o personagem morra de fom
                 os.system("cls") #Limpa o terminal
+                musicas.musica_gameover() 
                 banners.end_banner()    
                 input('Aperte o Enter para sair')
                 exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER   
@@ -179,9 +179,9 @@ class Character:
             print("")
             input("Você saiu para procurar itens e não achou nada") #Mensagem informativa caso o personagem não ache nenhum item
             self.__fome -= 20 #Personagem perde 20 de fome
-            if self.__fome<=0:
-                    musicas.musica_gameover()
+            if self.__fome<=0:                  
                     input("Você ficou muuito obcecado por itens e esqueceu de comer então acabou morrendo de fome") #Mensagem informativa caso o personagem morra de fome
+                    musicas.musica_gameover()
                     banners.end_banner()    
                     input('Aperte o Enter para sair')
                     exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
@@ -207,9 +207,9 @@ class Character:
         else:
             print("")
             input("Você conseguiu dormir, mas devido a sua fome você não conseguiu ter forças para se levantar e acabou morrendo") #Texto informativo caso o personagem durma mas morra de fome
+            musicas.musica_gameover()
             banners.end_banner()    
             input('Aperte o Enter para sair')
-            musicas.musica_gameover()
             exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
 
     def fugir(self): #Função para a ação [6] FUGIR | As opçoes abaixo so funcionam quando a funçao for chamada
@@ -241,6 +241,7 @@ class Character:
                 self.__vida -= dano_mar
                 if self.__vida<=0:
                     input("E acabou morrendo afogado")
+                    musicas.musica_gameover()
                     banners.end_banner()
                 else:
                     input("Apesar de quase ter morrido afogado você se manteve vivo. É melhor pensar mais nas suas próximas ações")
@@ -264,10 +265,11 @@ class Character:
 
                     if self.__vida<=0:
                         input("Após muito tempo tentando fugir você acaba cansando e o tubarão te alçança...")
+                        musicas.musica_gameover()
                         banners.end_banner()
                     else:
                         input("Depois de muita dedicação na sua fuga você finalmente consegue escapar do tubarão")
-                        #mas acabou voltando a estaca 0, perdendo todos os itens
+
             if self.__itens == 2:
                 print("")
                 input("Ao juntar a CORDA e as MADEIRAS, uma ideia para sua fuga surgiu em sua cabeça e você foi rapidamente bota-la em prática.")
@@ -279,6 +281,7 @@ class Character:
                 if tubarao_aparece == 1:
                     self.__vida = 0
                     input("Então você teve a estúpida idéia de lutar contra todos eles... E obviamente acabou morrendo")
+                    musicas.musica_gameover()
                     banners.end_banner()
                 if tubarao_aparece == 2:
                     self.__itens = 0

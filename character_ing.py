@@ -66,10 +66,10 @@ class Character_ing:
             else:
                 input("But your backpack was already full of bananas so your search didn't do any good") #Texto informativo caso o personagem esteja com a mochila cheia de comida
             self.__fome -= 20 #Ao sair para buscar comida o personagem perde 20 de fome
-            if self.__fome<0: #Se a fome for menor que 0 o personagem morre de fome
-                        musicas.musica_gameover()
+            if self.__fome<0: #Se a fome for menor que 0 o personagem morre de fome                      
                         input("But...you starved to death")#Texto informativo sobre o que aconteceu  
                         os.system("cls") #Limpa o terminal    
+                        musicas.musica_gameover()
                         banners.end_banner()
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
 
@@ -78,16 +78,16 @@ class Character_ing:
             input("You couldn't find food on this quest")#Texto informativo sobre o que aconteceu 
             self.__fome -= 20 #Ao não conseguir achar comida o personagem também perde 20 de fome
             if self.__fome<0: #Se a fome for menor que 0 o personagem morrre de fome
-                if self.__banana>0:                    
-                        musicas.musica_gameover()
+                if self.__banana>0:                                            
                         input("You worried a lot about looking for more food and starved because you forgot to eat") #Texto informativo sobre o que aconteceu 
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
-                else:
-                    musicas.musica_gameover()
+                else:                  
                     input("You didn´t have food and starved to death") #Texto informativo sobre o que aconteceu 
                     os.system("cls") #Limpa o terminal
+                    musicas.musica_gameover()
                     banners.end_banner()
                     exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
 
@@ -110,10 +110,10 @@ class Character_ing:
                 self.__vida-=dano #A vida do personagem é subtraida em relação ao dano sofrido
                 print("")
                 print(f"You suffered {dano} of damage") #Texto que informa quanto de dano o personagem sofreu
-                if self.__vida<=0:
-                    musicas.musica_gameover()
+                if self.__vida<=0:                  
                     input("YOU RECEIVED A FATAL ATACK AND DIED") #Mensagem após o personagem tomar um dano critico e ficar sem vida
                     os.system("cls") #Limpa o terminal
+                    musicas.musica_gameover()
                     banners.end_banner()
                     exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
                 else:
@@ -134,19 +134,19 @@ class Character_ing:
                     else:
                         input("But your figth wasn´t useful... Your backpack was full") #Texto informativo caso o personagem já esteja lotado de remédios
                     self.__fome -= 20 #Personagem perde 20 de fome 
-                    if self.__fome<=0:
-                        musicas.musica_gameover()                       
+                    if self.__fome<=0:                                          
                         input("But... you starved to death") #Mensagem informativa caso o personagem morra de fome
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
             else:
                 input("You ran and didn't took the item...\nBe brave in the next time") #Mensagem caso o jogador opte por fugir do combate
                 self.__fome -= 20 #Personagem perde 20 de fome
                 if self.__fome<=0:
-                        musicas.musica_gameover()
                         input("You ran, but you starved to death") #Mensagem informativa caso o personagem morra de fom
                         os.system("cls") #Limpa o terminal
+                        musicas.musica_gameover()
                         banners.end_banner()
                         exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
         
@@ -158,10 +158,10 @@ class Character_ing:
                 self.__remedio+=1 #Personagem adquire mais um remédio caso o espaço da mochila destino para remédios não esteja cheio
             else:
                 input("You was very lucky, you found a medicine... but you was very unlucky because your backpack was full") #Texto informativo caso o personagem já esteja cheio de remédios
-            if self.__fome<0:
-                musicas.musica_gameover()                
+            if self.__fome<0:                     
                 input("You was very lucky, you found a medicine... but you starved to death because you forgot to eat") #Mensagem informativa caso o personagem morra de fom
                 os.system("cls") #Limpa o terminal
+                musicas.musica_gameover() 
                 banners.end_banner()
                 exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER   
         elif achar_item == 4: #Easter Egg escondido, se encontrado ele eleva para 100% todos atributos do personagem , menos os itens que continuam a ser necessário para fugir da ilha.
@@ -175,8 +175,8 @@ class Character_ing:
             input("You leave to look for itens and didnt find nothing") #Mensagem informativa caso o personagem não ache nenhum item
             self.__fome -= 20 #Personagem perde 20 de fome
             if self.__fome<=0:
-                    musicas.musica_gameover()
                     input("You got really obsessed with items and forgot to eat so you ended up starving") #Mensagem informativa caso o personagem morra de fome
+                    musicas.musica_gameover() 
                     banners.end_banner()
                     exit() #Mensagem de GAME OVER e depois o jogo fecha ao apertar ENTER
 
