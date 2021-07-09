@@ -2,15 +2,17 @@
 #Para instalar essa biblioteca é necessário ter o "pip" instalado em sua máquina
 #Após a instalção do pip abra o menu de pesquisa do Windows e digite CMD
 #Com o CMD aberto digite "pip install pygame"
+#Instalar art
 #Após esses processos serem feitos você conseguirá jogar normalmente
 
-import pygame
+#import pygame
 
 import time, sys, os
 from character import Character
 from character_ing import Character_ing
 from tutorial import Tutorial
 from banner import Banner
+from music import Musica
 
 if __name__ == "__main__":
     
@@ -18,7 +20,9 @@ if __name__ == "__main__":
         personagem = Character()
         personagem_ing = Character_ing()
         tutoriais = Tutorial()
+        musicas = Musica()
         banner = Banner()
+        musicas.musica_ini()
         banner.title_banner()
 
         input("\nAperte ENTER para continuar...")
@@ -30,10 +34,10 @@ if __name__ == "__main__":
         print("")
         if lingua == 2:
             os.system("cls")
-            ver_tutorial = input("Deseja ver o tutorial? [S/N]: ").upper()
+            ver_tutorial = input("Deseja ver o tutorial? [S/N] : ").upper()
         elif lingua == 1:
             os.system("cls")
-            ver_tutorial = input("Do you wanna see the tutorial? [Y/N]").upper()
+            ver_tutorial = input("Do you wanna see the tutorial? [Y/N] : ").upper()
 
         while ver_tutorial!= "S" and ver_tutorial!="N" and ver_tutorial!="Y":
             print("")
@@ -57,22 +61,22 @@ if __name__ == "__main__":
         if lingua == 2:
             frase = ("Após 6 meses viajando a negócios, você recebeu a noticia que poderia voltar para casa, e chegaria a tempo do casamento da sua filha... Mau sabia que essa viagem mudaria completamente sua vida...\nO avião que você estava sofreu um acidente durante uma tempestade e caiu em uma ilha aparentemente deserta, seu objetivo é sobreviver e escapar da ilha para chegar em tempo de levar sua filha ao altar.")
 
-            #for i in list(frase):
-                #print(i, end='')
+            for i in list(frase):
+                print(i, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
-                #sys.stdout.flush()
-                #time.sleep(0.05)
+                sys.stdout.flush()
+                time.sleep(0.05)
             print("")
             input("\nAperte ENTER para iniciar o jogo...")
 
         elif lingua == 1:
-            frase = ("asdasdasdasdasdasda")
+            frase = ("After 6 months traveling on business, you received the news that you could return home, and arrive in time for your daughter's wedding... Bad did you know that this trip would completely change your life...\nThe plane you were on had an accident during a storm and crashed on a seemingly deserted island, your goal is to survive and escape the island to reach in time to take your daughter to the altar.")
 
-            #for i in list(frase):
-                #print(i, end='')
+            for i in list(frase):
+                print(i, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
-                #sys.stdout.flush()
-                #time.sleep(0.05)
+                sys.stdout.flush()
+                time.sleep(0.05)
             print("")
             input("\nPress ENTER to start the game...")
         os.system("cls")
