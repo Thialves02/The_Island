@@ -290,6 +290,6 @@ class Character_ing:
     def status_ing(self): #Função que mostra os itens e informações sobre o personagem 
         print(f"Day {self.__dia} 📅                        Medicines {self.__remedio}/{self.__remedioMax} 💊")
         print("")
-        print(f"Life {self.__vida}/{self.__vidaMax} ❤️                    Hunger {self.__fome}/{self.__fomeMax} 🍗 \U0001F601")
+        print(f"Life {self.__vida}/{self.__vidaMax} ❤️                    Hunger {self.__fome}/{self.__fomeMax} 🍗")
         print("")
         print(f"Food {self.__banana}/{self.__bananaMax} 🍌                    Escape {self.__itens}/{self.__itensMax} 🏃")

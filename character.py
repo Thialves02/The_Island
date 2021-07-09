@@ -25,7 +25,7 @@ class Character:
         self.__banana = 2 #Quantidade de comida inicial
         self.__bananaMax = 5 #Quantidade de comida máxima que o personagem carrega
 
-        self.__itens = 3 #Quantidade de itens que o personagem inicia
+        self.__itens = 0 #Quantidade de itens que o personagem inicia
         self.__itensMax = 3 #Quantidade máxima e necessária para o personagem fugir
 
         self.__remedio = 1 #Quantidade inicial de rémedios que o personagem carrega
@@ -300,6 +300,6 @@ class Character:
     def status(self): #Função que mostra os itens e informações sobre o personagem 
         print(f"Dia {self.__dia} 📅                        Remédios {self.__remedio}/{self.__remedioMax} 💊")
         print("")
-        print(f"Vida {self.__vida}/{self.__vidaMax} ❤️                    Fome {self.__fome}/{self.__fomeMax} 🍗 \U0001F601")
+        print(f"Vida {self.__vida}/{self.__vidaMax} ❤️                    Fome {self.__fome}/{self.__fomeMax} 🍗")
         print("")
         print(f"Comida {self.__banana}/{self.__bananaMax} 🍌                    Fugir {self.__itens}/{self.__itensMax} 🏃")
