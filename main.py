@@ -62,11 +62,11 @@ if __name__ == "__main__":
         if lingua == 2:
             frase = ("Após 6 meses viajando a negócios, você recebeu a noticia que poderia voltar para casa, e chegaria a tempo do casamento da sua filha... Mau sabia que essa viagem mudaria completamente sua vida...\nO avião que você estava sofreu um acidente durante uma tempestade e caiu em uma ilha aparentemente deserta, seu objetivo é sobreviver e escapar da ilha para chegar em tempo de levar sua filha ao altar.")
 
-            #for i in list(frase):
-                #print(i, end='')
+            for i in list(frase):
+                print(i, end='')
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
-                #sys.stdout.flush()
-                #time.sleep(0.05)
+                sys.stdout.flush()
+                time.sleep(0.05)
             print("")
             input("\nAperte ENTER para iniciar o jogo...")
 
