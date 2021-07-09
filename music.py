@@ -15,10 +15,13 @@ class Musica:
         #pygame.event.wait()
 
     def musica_win(self):
-        pygame.mixer.music.load('winner.wav') 
+        pygame.init()
+        pygame.mixer.music.load('./Projeto_Final/winner.wav') 
         pygame.mixer.music.play()
         #pygame.event.wait()
+
     def musica_gameover(self):
-        pygame.mixer.music.load('final.wav') 
+        pygame.init()
+        pygame.mixer.music.load('./Projeto_Final/final.wav') 
         pygame.mixer.music.play()
         #pygame.event.wait()  

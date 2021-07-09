@@ -22,6 +22,7 @@ if __name__ == "__main__":
         tutoriais = Tutorial()
         musicas = Musica()
         banner = Banner()
+
         musicas.musica_ini()
         banner.title_banner()
 
@@ -85,7 +86,7 @@ if __name__ == "__main__":
             if lingua == 1:
                 personagem_ing.status_ing()
                 print("=-"*25)
-                print('''           [1] - EAT 🍗
+                print('''                [1] - EAT 🍗
                 [2] - LOOK FOR FOOD 👀
                 [3] - LOOK FOR ITENS 🎒
                 [4] - HEAL UP 💊
@@ -98,7 +99,7 @@ if __name__ == "__main__":
             elif lingua == 2:
                 personagem.status()
                 print("=-"*25)
-                print('''            [1] - COMER 🍗
+                print('''                [1] - COMER 🍗
                 [2] - PROCURAR COMIDA 👀
                 [3] - PROCURAR ITENS 🎒
                 [4] - SE MEDICAR 💊

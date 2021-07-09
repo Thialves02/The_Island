@@ -25,7 +25,7 @@ class Character:
         self.__banana = 2 #Quantidade de comida inicial
         self.__bananaMax = 5 #Quantidade de comida máxima que o personagem carrega
 
-        self.__itens = 0 #Quantidade de itens que o personagem inicia
+        self.__itens = 3 #Quantidade de itens que o personagem inicia
         self.__itensMax = 3 #Quantidade máxima e necessária para o personagem fugir
 
         self.__remedio = 1 #Quantidade inicial de rémedios que o personagem carrega
@@ -97,6 +97,7 @@ class Character:
         achar_item = random.choice(item) #Variavel que escolhe aleatoriamente se o personagem vai achar um item, não achar nada ou achar remédio
         
         if achar_item == 1:
+            print("")
             print("Você avistou um item que pode ajudar a fugir da ilha, porém um um grupo furioso de macacos está por perto") #Texto informativo sobre o que aconteceu 
             print("Você tem a opção de lutar e tentar pegar o item ou fugir, o que irá fazer?") #Texto informativo sobre o que aconteceu 
             print('''
@@ -213,7 +214,11 @@ class Character:
 
     def fugir(self): #Função para a ação [6] FUGIR | As opçoes abaixo so funcionam quando a funçao for chamada
         if self.__itens == self.__itensMax:
-            musicas.musica_win() 
+            os.system("cls")
+            musicas.musica_win()
+            banners.win_banner()
+            input("Pressione ENTER para continuar...")
+            os.system("cls")
             final = ("Após uma árdua luta contra macacos furiosos e contra a fome durante essa jornada você finalmente conseguiu juntar todos os itens necessários para construir uma pequena jangada para fugir.Desengonçadamente você progrediu rápido e na construção da sua jangada vc finalmente  termina com a angustia de morrer sozinho, orgulhoso de sua criação você para e admira um pouco sua incrivel criação e o coloca no mar. Você se despede da ilha relembrando todo os momentos de luta e medo que passou mas esboça um sorriso no rosto após perceber que tudo já passou e que agora você finalmente voltará para sua vida normal, e consiguirá levar sua filha ao altar") 
             #Se o personagem estiver com os 3 itens ele conseguirá fugir da ilha            
             for l in list(final):
@@ -221,6 +226,8 @@ class Character:
                 #O stdout só é atualizado quando há nova linha e como nós estamos mandando tudo na mesma é preciso forçar a atualização.
                 sys.stdout.flush()
                 time.sleep(0.03)
+            
+            print("")
             input('Aperte ENTER...')           
             exit()
 
