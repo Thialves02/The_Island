@@ -14,40 +14,39 @@
 
 <br>
 
-## :dart: Sobre ##
+## :dart: About ##
 
-Projeto final do módulo 1 de lógica de programação da Blue Edech
+Final project for module 1 of programming logic from Blue Edtech
 
-## :rocket: Tecnologias ##
+## :rocket: Technologies ##
 
-As seguintes ferramentas foram usadas na construção do projeto:
+The tools bellow were used on this project
 
 - [Python]
 
-## :white_check_mark: Pré requisitos ##
+## :white_check_mark: Requirements ##
 
-Antes de começar, você precisa ter o [Git](https://git-scm.com), [Python](https://www.python.org), [Pip](https://pypi.org/project/pip/) e Pygame instalados em sua maquina.
+Before start the game, you need install [Git](https://git-scm.com), [Python](https://www.python.org), [Pip](https://pypi.org/project/pip/) and Pygame installed on your computer.
 
-## :checkered_flag: Começando ##
+## :checkered_flag: Starting ##
 
 ```bash
-#Instale Python na sua máquina
+#Install Python on your computer
 https://www.python.org
 
-#Instale o Pip 
+#Install Pip
 https://pypi.org/project/pip/
 
-#Instale o Pygame
+#install Pygame
 Abra o CMD e digite "pip install pygame"
 
-#Instale o Art
+#Install Art
 Abra o CMD e digite "pip install art"
 
-# Clone este repositório
+#Clone this repository
 $ git clone https://github.com/Thialves02/The_island
 
-#Iniciando o jogo
-Abra a pasta do jogo na sua IDE e rode o main
-```
+#Starting the game
+open the folder of the game and run the main in your IDE
 
 
