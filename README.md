@@ -40,6 +40,9 @@ https://pypi.org/project/pip/
 #Instale o Pygame
 Abra o CMD e digite "pip install pygame"
 
+#Instale o Art
+Abra o CMD e digite "pip install art"
+
 # Clone este repositório
 $ git clone https://github.com/Thialves02/The_island
 
