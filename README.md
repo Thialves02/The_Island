@@ -38,15 +38,15 @@ https://www.python.org
 https://pypi.org/project/pip/
 
 #install Pygame
-Abra o CMD e digite "pip install pygame"
+Open the CMD and type "pip install pygame"
 
 #Install Art
-Abra o CMD e digite "pip install art"
+Open the CMD and type "pip install art"
 
 #Clone this repository
 $ git clone https://github.com/Thialves02/The_island
 
 #Starting the game
-open the folder of the game and run the main in your IDE
+Open the folder of the game and run the main in your IDE
 
 
