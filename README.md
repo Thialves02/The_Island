@@ -47,6 +47,6 @@ Open the CMD and type "pip install art"
 $ git clone https://github.com/Thialves02/The_island
 
 #Starting the game
-Open the folder of the game and run the main in your IDE
+Open the folder of the game and run the main on your IDE
 
 
